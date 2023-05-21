@@ -1,0 +1,107 @@
+/* BASIC CONTENT */
+
+head {
+  color:blanchedalmond
+}
+
+body {
+    color:rgb(9, 9, 9);
+    background-color: rgb(213, 213, 213);
+  }
+
+  h1 {
+    color: rgb(41, 41, 41);
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 100px;
+  }
+
+/* LINKS */
+
+a {
+    color: rgb(156, 156, 156);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(180, 0, 0);
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 2px 3.5%;
+    text-decoration: none;
+    margin: 0.5%;
+    line-height: 250%;
+    float: center;
+  }
+
+a:hover{
+  background-color: inherit;
+  animation-name: hovereffect;
+  animation-duration: 0.5s;
+}
+a:visited {
+  color:inherit;
+}
+a:active {
+  color: inherit;
+}
+
+@keyframes hovereffect{
+  
+  from {background-color:rgb(180, 0, 0)};
+  to {background-color:rgb(255, 255, 196)};
+}
+
+/* NAVIGATION BAR (+STICKY BAR SCRIPT) */
+
+#navbar {
+  overflow: hidden;
+  text-align: center;
+  background-color:rgb(149, 149, 149);
+  padding-top: 16px;
+}
+
+.content {
+  padding-top: 16px;
+  margin: 0px 7.5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* DROPDOWN SCRIPT */
+
+/* BODY TEXT (+FLEXBOX ORGANIZATION) */
+
+.paras {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+}
+
+p1 {
+  font-size: 100px;
+}
+
+pL {
+  font-size: 100px;
+  text-align: left;
+}
+
+pR {
+  font-size: 100px;
+  text-align: right;
+}
+
+.bg {
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+}
